@@ -30,11 +30,11 @@ sudo docker rm -f employee-jdbc-container
 
 sudo docker rmi employee-jdbc
 
-sudo docker logs -f employee-jdbc-container
+sudo docker rm -f mysqldb
 
-sudo docker rm -f employee-mysql
+sudo docker rmi mysql:8
 
-sudo docker rmi employee-mysql
+sudo docker rmi openjdk:11
 
 sudo docker network rm employee-mysql
 
